@@ -8,10 +8,11 @@ except ImportError:
 from xml.etree import ElementTree
 
 
-with urlopen('https://pypi.python.org/simple') as f:
-    packages = [
-        n.text for n in list(ElementTree.fromstring(f.read()))[-1] if n.text
-    ]
+f = urlopen('https://pypi.python.org/simple')
+packages = [
+	n.text for n in list(ElementTree.fromstring(f.read()))[-1] if n.text
+]
+f.close()
 
 long_description = ''
 
