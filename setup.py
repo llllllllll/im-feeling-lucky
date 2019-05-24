@@ -10,7 +10,7 @@ from xml.etree import ElementTree
 
 f = urlopen('https://pypi.python.org/simple')
 packages = [
-	n.text for n in list(ElementTree.fromstring(f.read()))[-1] if n.text
+    n.text for n in list(ElementTree.fromstring(f.read()))[-1] if n.text
 ]
 f.close()
 
