@@ -23,7 +23,7 @@ if 'upload' in sys.argv:
 
 setup(
     name='im-feeling-lucky',
-    version='0.1.0',
+    version='0.1.1',
     description='Randomly install one or more packages from PyPI!',
     author='Joe Jevnik',
     author_email='joejev@gmail.com',
